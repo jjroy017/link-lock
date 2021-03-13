@@ -54,7 +54,7 @@ async function onHide() {
   try {
     let _ = JSON.parse(b64.decode(hash));
   } catch {
-    error("The hidden link appears corrupted. It must be a <a href=\"https://jstrieb.github.io/link-lock\">Link Lock</a> URL.");
+    error("The hidden link appears corrupted. It must be a <a href=\"https://jjroy017.github.io/link-lock\">Link Lock</a> URL.");
     return;
   }
 
@@ -116,7 +116,7 @@ async function randomLink() {
 function main() {
   if (window.location.hash) {
     document.querySelector("#encrypted-url").value =
-      `https://jstrieb.github.io/link-lock/${window.location.hash}`;
+      `https://jjroy017.github.io/link-lock/${window.location.hash}`;
 
     window.location.hash = "";
   }
